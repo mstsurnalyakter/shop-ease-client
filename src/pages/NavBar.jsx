@@ -23,7 +23,7 @@ function NavList() {
         to={"/"}
         className={({ isActive }) =>
           isActive
-            ? "bg-[#FF4153] px-3 py-1  text-white  rounded-lg"
+            ? "bg-[#07BE65] px-3 py-1  text-white  rounded-lg"
             : "p-2 text-[#131313CC]"
         }
       >
@@ -114,8 +114,9 @@ const NavBar = () => {
       <Navbar className="mx-auto max-w-7xl  shadow-none rounded-none px-3 lg:px-2 pt-4  mb-6 lg:py-5">
         <div className="flex items-center justify-between">
           <Typography className="mr-4 cursor-pointer py-1.5 lg:ml-2 flex items-center">
-            <Link to={"/"}>
-              <img className="w-40" src={logo} alt="" />
+            <Link className="flex items-center justify-center gap-1" to={"/"}>
+              <img className="w-12" src={logo} alt="" />
+              <span className="text-black font-bold text-xl">ShopEase</span>
             </Link>
           </Typography>
           <div className="hidden lg:block">
@@ -129,8 +130,8 @@ const NavBar = () => {
                     to={"/login"}
                     className={({ isActive }) =>
                       isActive
-                        ? "bg-[#FF4153] px-3 py-1 flex items-center justify-center  text-white  rounded-lg"
-                        : "text-[#131313CC] border border-[#FF4153] px-3 py-1 rounded-lg"
+                        ? "bg-[#07BE65] px-3 py-1 flex items-center justify-center  text-white  rounded-lg"
+                        : "text-[#131313CC] border border-[#07BE65] px-3 py-1 rounded-lg"
                     }
                   >
                     Login
@@ -161,7 +162,7 @@ const NavBar = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             {/* Theme Toggle Buttons */}
-            <div className=" bg-[#FF4153] items-center justify-center flex flex-wrap rounded">
+            <div className=" bg-[#07BE65] items-center justify-center flex flex-wrap rounded">
               {options?.map((opt) => (
                 <button
                   onClick={() => setTheme(opt.text)}
@@ -219,8 +220,8 @@ const NavBar = () => {
                   to={"/login"}
                   className={({ isActive }) =>
                     isActive
-                      ? "bg-[#FF4153] px-3 py-1 flex items-center mx-auto justify-center  text-white  rounded-lg"
-                      : "text-[#131313CC] border flex items-center mx-auto justify-center border-[#FF4153] px-3 py-1 rounded-lg"
+                      ? "bg-[#07BE65] px-3 py-1 flex items-center mx-auto justify-center  text-white  rounded-lg"
+                      : "text-[#131313CC] border flex items-center mx-auto justify-center border-[#07BE65] px-3 py-1 rounded-lg"
                   }
                 >
                   Login
