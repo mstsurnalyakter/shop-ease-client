@@ -1,20 +1,29 @@
 import { useEffect, useState } from "react";
 import { LuEye, LuEyeOff } from "react-icons/lu";
-import logo2 from "/logo.png";
+import logo from "/logo.png";
 import registerBg from "/register.jfif";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import useAuth from "../../hooks/useAuth";
 
-const Login = () => {
+import { TbFidgetSpinner } from "react-icons/tb";
+
+import useAuth from "../../hooks/useAuth";
+import { imageUpload } from "../../api/utils";
+
+const SingUp = () => {
   const [toggle, setToggle] = useState(false);
-  const { signIn, signInWithGoogle } = useAuth();
+
+  const {
+    createUser,
+    updateUserProfile,
+    loading,
+    setLoading,
+    signInWithGoogle,
+  } = useAuth();
 
   // navigate user
   const navigate = useNavigate();
-  const location = useLocation();
-  const from = location?.state || "/";
 
   const {
     register,
@@ -23,62 +32,86 @@ const Login = () => {
   } = useForm();
 
   useEffect(() => {
-    if (errors.email) {
+    if (errors.name) {
+      toast.error(errors.name.message);
+    } else if (errors.email) {
       toast.error(errors.email.message);
+    } else if (errors.photo) {
+      toast.error(errors.photo.message);
     } else if (errors.password) {
       toast.error(errors.password.message);
+    } else if (errors.termsConditions) {
+      toast.error(errors.termsConditions.message);
     }
-  }, [errors.email, errors.password]);
+  }, [
+    errors.name,
+    errors.email,
+    errors.photo,
+    errors.termsConditions,
+    errors.password,
+  ]);
 
   const onSubmit = async (data) => {
-    const { email, password } = data;
-    try {
-      const result = await signIn(email, password);
+    const { name, email, photo, password} = data;
+    console.log(name, email, photo, password);
 
-      if (result) {
-        toast.success("Successfully logged in!");
+    try {
+      // 1. upload image and get image url
+      setLoading(true);
+
+      const imageURL = await imageUpload(photo[0]);
+      console.log(imageURL);
+
+      //2.user registration
+      const result = await createUser(email, password);
+      console.log(result);
+
+      //3.update user profile
+      await updateUserProfile(name, imageURL);
+      if (result?.user) {
+        toast.success("Successfully Register!");
+
         setTimeout(() => {
           navigate(from);
           window.location.reload();
-        }, 2000);
+        }, 3000);
       }
+
+
     } catch (error) {
-      toast.error(
-        error?.message?.split("(")[1].replace(")", "").split("/")[1] ||
-          "An error occurred while logging."
-      );
+      toast.error(error.message);
     }
   };
 
-  const handleSocialLogin = async () => {
-    try {
-      const result = await signInWithGoogle();
+    const handleSocialLogin = async () => {
+      try {
+        const result = await signInWithGoogle();
 
-      if (result) {
-        toast.success("SignIn with Google Successful");
-        setTimeout(() => {
-          navigate(from);
-          window.location.reload();
-        }, 2000);
+        if (result) {
+          toast.success("SignIn with Google Successful");
+          setTimeout(() => {
+            navigate(from);
+            window.location.reload();
+          }, 2000);
+        }
+      } catch (error) {
+        toast.error(error?.message);
       }
-    } catch (error) {
-      toast.error(error?.message);
-    }
-  };
+    };
 
   return (
     <div className="flex justify-center items-center min-h-[calc(100vh-306px)]">
-      {/* <DynamicTitle pageTitle="Login" /> */}
       <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl ">
         <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
           <div className="flex justify-center mx-auto">
-            <img className="w-auto h-7 sm:h-8" src={logo2} alt="" />
+            <img className="w-auto h-7 sm:h-8" src={logo} alt="" />
           </div>
 
           <p className="mt-3 text-xl text-center text-gray-600 ">
-            Welcome back!
+            Create an account
           </p>
 
+          {/* <SocialLogin /> */}
           <div
             onClick={handleSocialLogin}
             className="flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg   hover:bg-gray-50 "
@@ -113,12 +146,54 @@ const Login = () => {
             <span className="w-1/5 border-b  lg:w-1/4"></span>
 
             <div className="text-xs text-center text-gray-500  hover:underline">
-              or Login with email
+              or Registration with email
             </div>
 
             <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="mt-4">
+              <label
+                className="block mb-2 text-sm font-medium text-gray-600 "
+                htmlFor="name"
+              >
+               Full Name
+              </label>
+              <input
+                id="name"
+                autoComplete="name"
+                name="name"
+                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg    focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
+                type="text"
+                {...register("name", {
+                  required: {
+                    value: true,
+                    message: "You must fill Name input field",
+                  },
+                })}
+              />
+            </div>
+            <div className="mt-4">
+              <label
+                className="block mb-2 text-sm font-medium text-gray-600 "
+                htmlFor="photo"
+              >
+                Photo
+              </label>
+              <input
+                id="photo"
+                autoComplete="photo"
+                name="photo"
+                className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg    focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
+                type="file"
+                {...register("photo", {
+                  required: {
+                    value: true,
+                    message: "You must fill Photo URL input field",
+                  },
+                })}
+              />
+            </div>
             <div className="mt-4">
               <label
                 className="block mb-2 text-sm font-medium text-gray-600 "
@@ -180,13 +255,37 @@ const Login = () => {
                 {toggle ? <LuEye /> : <LuEyeOff />}
               </div>
             </div>
+            <div className="flex mt-4 items-center flex-row gap-2">
+              <input
+                className="cursor-pointer"
+                type="checkbox"
+                {...register("termsConditions", {
+                  required: {
+                    value: true,
+                    message: "You need to agree with terms and conditions",
+                  },
+                })}
+              />
+              <label className="label">
+                <span className="label-text">
+                  I agree with{" "}
+                  <Link className="underline text-[#0073e1]">
+                    terms & conditions
+                  </Link>
+                </span>
+              </label>
+            </div>
 
             <div className="mt-6">
               <button
                 type="submit"
-                className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#07BE65] rounded-lg hover:bg-[#07BE65] focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
+                className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#4D95EA] rounded-lg hover:bg-[#2f86eb] focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
               >
-                Login
+                {loading ? (
+                  <TbFidgetSpinner className="animate-spin m-auto" />
+                ) : (
+                  "Sign Up"
+                )}
               </button>
             </div>
           </form>
@@ -195,10 +294,10 @@ const Login = () => {
             <span className="w-1/5 border-b  md:w-1/4"></span>
 
             <Link
-              to="/signup"
+              to="/login"
               className="text-lg text-blue-700 underline  hover:underline"
             >
-              or Register
+              or Login
             </Link>
 
             <span className="w-1/5 border-b  md:w-1/4"></span>
@@ -215,6 +314,4 @@ const Login = () => {
   );
 };
 
-Login.propTypes = {};
-
-export default Login;
+export default SingUp;
