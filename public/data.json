@@ -1,0 +1,502 @@
+[
+    {
+        "productName": "Organic Face Serum",
+        "productImage": "https://i.postimg.cc/QCm4b3Jw/b1.avif",
+        "brandName": "PureSkin",
+        "description": "Revitalizing organic face serum with natural ingredients to reduce wrinkles.",
+        "price": 29.99,
+        "category": "Beauty & Health",
+        "ratings": 4.7,
+        "creationDate": "2024-07-01T10:15:30Z"
+    },
+    {
+        "productName": "Men's Wristwatch",
+        "productImage": "https://i.postimg.cc/KzJBpvCP/j1.avif",
+        "brandName": "TimeMaster",
+        "description": "Elegant men's wristwatch with stainless steel band and quartz movement.",
+        "price": 89.99,
+        "category": "Jewelry & Watches",
+        "ratings": 4.5,
+        "creationDate": "2024-07-02T12:30:00Z"
+    },
+    {
+        "productName": "Bluetooth Earbuds",
+        "productImage": "https://i.postimg.cc/QNvk2VHm/e1.avif",
+        "brandName": "SoundWave",
+        "description": "High-quality wireless Bluetooth earbuds with noise-cancellation and long battery life.",
+        "price": 55.99,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "creationDate": "2024-07-03T14:20:00Z"
+    },
+    {
+        "productName": "Men's Running Shoes",
+        "productImage": "https://i.postimg.cc/FH50RhWM/s1.avif",
+        "brandName": "RunFast",
+        "description": "Comfortable men's running shoes with shock-absorbing sole and breathable mesh.",
+        "price": 79.99,
+        "category": "Sports & Entertainment",
+        "ratings": 4.8,
+        "creationDate": "2024-07-04T09:15:00Z"
+    },
+    {
+        "productName": "Women's Dress",
+        "productImage": "https://i.postimg.cc/P5jK7bjv/w1.avif",
+        "brandName": "ElegantWear",
+        "description": "Stylish women's dress with floral print, perfect for casual or formal events.",
+        "price": 49.99,
+        "category": "Women's Clothing",
+        "ratings": 4.7,
+        "creationDate": "2024-07-05T11:45:00Z"
+    },
+    {
+        "productName": "Kids' Toy Car",
+        "productImage": "https://i.postimg.cc/028bHr42/t1.avif",
+        "brandName": "PlayTime",
+        "description": "Colorful toy car with interactive features and durable plastic construction.",
+        "price": 24.99,
+        "category": "Toys & Games",
+        "ratings": 4.4,
+        "creationDate": "2024-07-06T16:30:00Z"
+    },
+    {
+        "productName": "Ergonomic Office Chair",
+        "productImage": "https://i.postimg.cc/Y2Psdm0Q/f1.avif",
+        "brandName": "ComfortZone",
+        "description": "Ergonomic office chair with adjustable lumbar support and reclining feature.",
+        "price": 149.99,
+        "category": "Furniture",
+        "ratings": 4.6,
+        "creationDate": "2024-07-08T13:40:00Z"
+    },
+    {
+        "productName": "Anti-Aging Night Cream",
+        "productImage": "https://i.postimg.cc/c4DktdH8/b2.avif",
+        "brandName": "YouthGlow",
+        "description": "Luxurious anti-aging night cream designed to hydrate and rejuvenate skin.",
+        "price": 39.99,
+        "category": "Beauty & Health",
+        "ratings": 4.7,
+        "creationDate": "2024-07-09T17:00:00Z"
+    },
+    {
+        "productName": "Women's Sunglasses",
+        "productImage": "https://i.postimg.cc/DzcXmwv9/j2.avif",
+        "brandName": "SunShine",
+        "description": "Stylish women's sunglasses with UV protection and polarized lenses.",
+        "price": 29.99,
+        "category": "Jewelry & Watches",
+        "ratings": 4.5,
+        "creationDate": "2024-07-10T10:20:00Z"
+    },
+    {
+        "productName": "Smartphone with 128GB Storage",
+        "productImage": "https://i.postimg.cc/g2HVLD4t/e2.avif",
+        "brandName": "TechGiant",
+        "description": "Latest smartphone model with 128GB storage, high-resolution camera, and fast processor.",
+        "price": 399.99,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "creationDate": "2024-07-11T11:30:00Z"
+    },
+    {
+        "productName": "Adjustable Dumbbells",
+        "productImage": "https://i.postimg.cc/zGCKH44V/s2.avif",
+        "brandName": "FitGear",
+        "description": "Set of adjustable dumbbells for versatile home workouts and strength training.",
+        "price": 79.99,
+        "category": "Sports & Entertainment",
+        "ratings": 4.6,
+        "creationDate": "2024-07-12T15:10:00Z"
+    },
+    {
+        "productName": "Men's Leather Jacket",
+        "productImage": "https://i.postimg.cc/sx8fXD3b/m1.avif",
+        "brandName": "UrbanWear",
+        "description": "Classic men's leather jacket with zippered pockets and a stylish design.",
+        "price": 199.99,
+        "category": "Men's Clothing",
+        "ratings": 4.7,
+        "creationDate": "2024-07-13T14:25:00Z"
+    },
+    {
+        "productName": "Gaming Console",
+        "productImage": "https://i.postimg.cc/g0M3N2Cv/e3.avif",
+        "brandName": "GameMaster",
+        "description": "Latest gaming console with high-definition graphics and a variety of pre-installed games.",
+        "price": 299.99,
+        "category": "Electronics",
+        "ratings": 4.9,
+        "creationDate": "2024-07-14T09:30:00Z"
+    },
+    {
+        "productName": "Children's Puzzle Set",
+        "productImage": "https://i.postimg.cc/nhWrz2hC/t2.avif",
+        "brandName": "BrainBoost",
+        "description": "Educational puzzle set designed to enhance problem-solving skills and cognitive development.",
+        "price": 18.99,
+        "category": "Toys & Games",
+        "ratings": 4.5,
+        "creationDate": "2024-07-15T08:45:00Z"
+    },
+    {
+        "productName": "Adjustable Desk Lamp",
+        "productImage": "https://i.postimg.cc/zXRP6XH6/f2.avif",
+        "brandName": "BrightLight",
+        "description": "Adjustable desk lamp with multiple brightness settings and a modern design.",
+        "price": 34.99,
+        "category": "Furniture",
+        "ratings": 4.4,
+        "creationDate": "2024-07-17T12:00:00Z"
+    },
+    {
+        "productName": "Hydrating Face Mask",
+        "productImage": "https://i.postimg.cc/JzG6bSDY/b3.avif",
+        "brandName": "GlowSkin",
+        "description": "Deeply hydrating face mask with soothing ingredients for a refreshed complexion.",
+        "price": 19.99,
+        "category": "Beauty & Health",
+        "ratings": 4.6,
+        "creationDate": "2024-07-18T15:10:00Z"
+    },
+    {
+        "productName": "Classic Analog Watch",
+        "productImage": "https://i.postimg.cc/3rqDk6hx/j3.avif",
+        "brandName": "Timeless",
+        "description": "Sophisticated classic analog watch with a leather strap and minimalistic design.",
+        "price": 79.99,
+        "category": "Jewelry & Watches",
+        "ratings": 4.5,
+        "creationDate": "2024-07-19T11:20:00Z"
+    },
+    {
+        "productName": "Portable Power Bank",
+        "productImage": "https://i.postimg.cc/m2xCdq56/e4.avif",
+        "brandName": "ChargePlus",
+        "description": "High-capacity portable power bank with fast charging capability and multiple ports.",
+        "price": 29.99,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "creationDate": "2024-07-20T15:45:00Z"
+    },
+    {
+        "productName": "Yoga Mat",
+        "productImage": "https://i.postimg.cc/pdkjqzWv/s3.avif",
+        "brandName": "StretchWell",
+        "description": "Non-slip yoga mat with extra cushioning for comfort and stability during workouts.",
+        "price": 25.99,
+        "category": "Sports & Entertainment",
+        "ratings": 4.6,
+        "creationDate": "2024-07-21T08:30:00Z"
+    },
+    {
+        "productName": "Women's Casual Sneakers",
+        "productImage": "https://i.postimg.cc/4xQwRKfL/w2.avif",
+        "brandName": "FootEase",
+        "description": "Comfortable women's casual sneakers with stylish design and durable sole.",
+        "price": 45.99,
+        "category": "Women's Clothing",
+        "ratings": 4.4,
+        "creationDate": "2024-07-22T09:40:00Z"
+    },
+    {
+        "productName": "Wooden Bookshelf",
+        "productImage": "https://i.postimg.cc/GmwSCwk2/f3.avif",
+        "brandName": "HomeClassic",
+        "description": "Elegant wooden bookshelf with multiple shelves for books and decor items.",
+        "price": 129.99,
+        "category": "Furniture",
+        "ratings": 4.7,
+        "creationDate": "2024-07-23T10:00:00Z"
+    },
+    {
+        "productName": "Cooling Facial Mist",
+        "productImage": "https://i.postimg.cc/s2WTLSJp/b4.avif",
+        "brandName": "FreshFace",
+        "description": "Refreshing facial mist that hydrates and cools the skin throughout the day.",
+        "price": 15.99,
+        "category": "Beauty & Health",
+        "ratings": 4.5,
+        "creationDate": "2024-07-24T12:30:00Z"
+    },
+    {
+        "productName": "Men's Casual Shirt",
+        "productImage": "https://i.postimg.cc/zfVrLYcr/m2.avif",
+        "brandName": "SmartStyle",
+        "description": "Versatile men's casual shirt made of soft, breathable fabric, suitable for any occasion.",
+        "price": 34.99,
+        "category": "Men's Clothing",
+        "ratings": 4.6,
+        "creationDate": "2024-07-25T14:45:00Z"
+    },
+    {
+        "productName": "Portable Air Purifier",
+        "productImage": "https://i.postimg.cc/0NNwMqzr/e5.avif",
+        "brandName": "BreatheEasy",
+        "description": "Compact air purifier with HEPA filter and UV-C light for cleaner air.",
+        "price": 79.99,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "creationDate": "2024-07-26T11:20:00Z"
+    },
+    {
+        "productName": "Foldable Picnic Table",
+        "productImage": "https://i.postimg.cc/4x624L51/f4.avif",
+        "brandName": "OutdoorGear",
+        "description": "Foldable picnic table with built-in seating and a durable design for outdoor use.",
+        "price": 89.99,
+        "category": "Furniture",
+        "ratings": 4.5,
+        "creationDate": "2024-07-27T13:35:00Z"
+    },
+    {
+        "productName": "Essential Oils Set",
+        "productImage": "https://i.postimg.cc/prWkySMZ/b5.avif",
+        "brandName": "AromaPure",
+        "description": "Set of therapeutic essential oils for relaxation and wellness.",
+        "price": 39.99,
+        "category": "Beauty & Health",
+        "ratings": 4.8,
+        "creationDate": "2024-07-28T15:20:00Z"
+    },
+    {
+        "productName": "Men's Dress Shoes",
+        "productImage": "https://i.postimg.cc/3NH5b4J8/m3.avif",
+        "brandName": "EliteFootwear",
+        "description": "Classic men's dress shoes with polished leather and comfortable fit.",
+        "price": 119.99,
+        "category": "Men's Clothing",
+        "ratings": 4.6,
+        "creationDate": "2024-07-29T12:10:00Z"
+    },
+    {
+        "productName": "Smart Home Thermostat",
+        "productImage": "https://i.postimg.cc/sXRL4Fgq/e5.avif",
+        "brandName": "ClimateControl",
+        "description": "Smart thermostat with Wi-Fi connectivity and programmable settings for energy savings.",
+        "price": 129.99,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "creationDate": "2024-07-30T11:50:00Z"
+    },
+    {
+        "productName": "Children's Building Blocks",
+        "productImage": "https://i.postimg.cc/cHBdQB07/t3.avif",
+        "brandName": "BlockFun",
+        "description": "Set of colorful building blocks that promotes creativity and fine motor skills.",
+        "price": 22.99,
+        "category": "Toys & Games",
+        "ratings": 4.5,
+        "creationDate": "2024-07-31T14:00:00Z"
+    },
+    {
+        "productName": "High-Pressure Shower Head",
+        "productImage": "https://i.postimg.cc/tJBk6zXH/b6.avif",
+        "brandName": "AquaBoost",
+        "description": "High-pressure shower head with adjustable settings and water-saving technology.",
+        "price": 34.99,
+        "category": "Beauty & Health",
+        "ratings": 4.4,
+        "creationDate": "2024-08-01T15:25:00Z"
+    },
+    {
+        "productName": "Leather Wallet",
+        "productImage": "https://i.postimg.cc/jSHWkS7D/j4.avif",
+        "brandName": "ClassicGear",
+        "description": "Sleek leather wallet with multiple card slots and a money clip.",
+        "price": 49.99,
+        "category": "Jewelry & Watches",
+        "ratings": 4.6,
+        "creationDate": "2024-08-02T09:30:00Z"
+    },
+    {
+        "productName": "Wireless Earbuds",
+        "productImage": "https://i.postimg.cc/k4fy6L6x/e6.avif",
+        "brandName": "SoundMate",
+        "description": "Compact wireless earbuds with superior sound quality and noise isolation.",
+        "price": 69.99,
+        "category": "Electronics",
+        "ratings": 4.8,
+        "creationDate": "2024-08-03T11:00:00Z"
+    },
+    {
+        "productName": "Adjustable Weight Bench",
+        "productImage": "https://i.postimg.cc/RhJnSYcC/s4.avif",
+        "brandName": "BodyPro",
+        "description": "Adjustable weight bench for versatile strength training and workouts.",
+        "price": 89.99,
+        "category": "Sports & Entertainment",
+        "ratings": 4.7,
+        "creationDate": "2024-08-04T13:15:00Z"
+    },
+    {
+        "productName": "Floral Print Dress",
+        "productImage": "https://i.postimg.cc/mDtS98QJ/w3.avif",
+        "brandName": "ChicFashion",
+        "description": "Elegant floral print dress perfect for spring and summer occasions.",
+        "price": 54.99,
+        "category": "Women's Clothing",
+        "ratings": 4.6,
+        "creationDate": "2024-08-05T12:45:00Z"
+    },
+    {
+        "productName": "Child's Ride-On Toy",
+        "productImage": "https://i.postimg.cc/TPcs075P/t4.avif",
+        "brandName": "FunRides",
+        "description": "Colorful ride-on toy for children with safety features and durable construction.",
+        "price": 79.99,
+        "category": "Toys & Games",
+        "ratings": 4.5,
+        "creationDate": "2024-08-06T10:30:00Z"
+    },
+    {
+        "productName": "Swivel Office Chair",
+        "productImage": "https://i.postimg.cc/cJd9vRkG/f5.avif",
+        "brandName": "ComfortWorks",
+        "description": "Swivel office chair with adjustable height and lumbar support for all-day comfort.",
+        "price": 119.99,
+        "category": "Furniture",
+        "ratings": 4.6,
+        "creationDate": "2024-08-08T12:20:00Z"
+    },
+    {
+        "productName": "Hydrating Lip Balm",
+        "productImage": "https://i.postimg.cc/X7vQbt8N/b7.avif",
+        "brandName": "SoftLips",
+        "description": "Moisturizing lip balm with natural ingredients for smooth and hydrated lips.",
+        "price": 9.99,
+        "category": "Beauty & Health",
+        "ratings": 4.4,
+        "creationDate": "2024-08-09T14:50:00Z"
+    },
+    {
+        "productName": "Men's Polo Shirt",
+        "productImage": "https://i.postimg.cc/nc2b0L8x/m4.avif",
+        "brandName": "CasualWear",
+        "description": "Comfortable men's polo shirt with classic fit and breathable fabric.",
+        "price": 27.99,
+        "category": "Men's Clothing",
+        "ratings": 4.5,
+        "creationDate": "2024-08-10T09:00:00Z"
+    },
+    {
+        "productName": "Smart Fitness Tracker",
+        "productImage": "https://i.postimg.cc/NGC4gqwt/e7.avif",
+        "brandName": "FitTrack",
+        "description": "Advanced fitness tracker with heart rate monitor, step counter, and sleep analysis.",
+        "price": 99.99,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "creationDate": "2024-08-11T10:35:00Z"
+    },
+    {
+        "productName": "Portable Folding Table",
+        "productImage": "https://i.postimg.cc/mgjqNpHg/f6.avif",
+        "brandName": "OutdoorPro",
+        "description": "Portable folding table suitable for camping, picnics, and outdoor activities.",
+        "price": 69.99,
+        "category": "Furniture",
+        "ratings": 4.5,
+        "creationDate": "2024-08-12T12:15:00Z"
+    },
+    {
+        "productName": "Anti-Wrinkle Cream",
+        "productImage": "https://i.postimg.cc/W1Bn0zPt/b8.avif",
+        "brandName": "SkinRevive",
+        "description": "Anti-wrinkle cream with retinol and hyaluronic acid for youthful and smooth skin.",
+        "price": 49.99,
+        "category": "Beauty & Health",
+        "ratings": 4.8,
+        "creationDate": "2024-08-13T13:45:00Z"
+    },
+    {
+        "productName": "Men's Casual Jacket",
+        "productImage": "https://i.postimg.cc/5tHh4qX9/m5.avif",
+        "brandName": "UrbanEdge",
+        "description": "Men's casual jacket with a modern design and versatile styling options.",
+        "price": 79.99,
+        "category": "Men's Clothing",
+        "ratings": 4.6,
+        "creationDate": "2024-08-14T11:10:00Z"
+    },
+    {
+        "productName": "Wireless Charging Pad",
+        "productImage": "https://i.postimg.cc/dVrmmhZQ/e8.avif",
+        "brandName": "ChargeMate",
+        "description": "Sleek wireless charging pad compatible with most smartphones and devices.",
+        "price": 24.99,
+        "category": "Electronics",
+        "ratings": 4.7,
+        "creationDate": "2024-08-15T10:50:00Z"
+    },
+    {
+        "productName": "Kids' Art Supplies Set",
+        "productImage": "https://i.postimg.cc/br4Vr4Wm/t5.avif",
+        "brandName": "CreativeKids",
+        "description": "Complete art supplies set including crayons, markers, and sketch pads for children.",
+        "price": 27.99,
+        "category": "Toys & Games",
+        "ratings": 4.5,
+        "creationDate": "2024-08-16T12:20:00Z"
+    },
+    {
+        "productName": "Sofa Bed",
+        "productImage": "https://i.postimg.cc/YCPNH1cx/f7.avif",
+        "brandName": "ComfortLiving",
+        "description": "Versatile sofa bed with comfortable cushioning and easy conversion mechanism.",
+        "price": 349.99,
+        "category": "Furniture",
+        "ratings": 4.7,
+        "creationDate": "2024-08-18T14:30:00Z"
+    },
+    {
+        "productName": "Moisturizing Body Lotion",
+        "productImage": "https://i.postimg.cc/9MVYNk0h/b9.avif",
+        "brandName": "SkinSoft",
+        "description": "Rich moisturizing body lotion with shea butter and vitamin E for soft, hydrated skin.",
+        "price": 21.99,
+        "category": "Beauty & Health",
+        "ratings": 4.6,
+        "creationDate": "2024-08-19T15:10:00Z"
+    },
+    {
+        "productName": "Digital Wristwatch",
+        "productImage": "https://i.postimg.cc/tJnJdqbC/j5.avif",
+        "brandName": "TechTime",
+        "description": "Digital wristwatch with LED display, multiple functions, and a sporty design.",
+        "price": 44.99,
+        "category": "Jewelry & Watches",
+        "ratings": 4.4,
+        "creationDate": "2024-08-20T10:30:00Z"
+    },
+    {
+        "productName": "Smart Home Hub",
+        "productImage": "https://i.postimg.cc/k5yQzLyk/e9.avif",
+        "brandName": "SmartConnect",
+        "description": "Central smart home hub for controlling connected devices and automating your home.",
+        "price": 129.99,
+        "category": "Electronics",
+        "ratings": 4.6,
+        "creationDate": "2024-08-21T11:45:00Z"
+    },
+    {
+        "productName": "Adjustable Workout Bench",
+        "productImage": "https://i.postimg.cc/DfRxrkpg/s5.avif",
+        "brandName": "FitStrong",
+        "description": "Adjustable workout bench with multiple incline settings for effective strength training.",
+        "price": 99.99,
+        "category": "Sports & Entertainment",
+        "ratings": 4.7,
+        "creationDate": "2024-08-22T12:55:00Z"
+    },
+    {
+        "productName": "Knitted Sweater",
+        "productImage": "https://i.postimg.cc/2jWQfqTQ/w4.avif",
+        "brandName": "WarmWear",
+        "description": "Cozy knitted sweater made of soft, high-quality wool for warmth and comfort.",
+        "price": 59.99,
+        "category": "Women's Clothing",
+        "ratings": 4.6,
+        "creationDate": "2024-08-23T14:20:00Z"
+    }
+]
