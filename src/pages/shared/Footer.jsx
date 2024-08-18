@@ -18,10 +18,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-3 lg:justify-start">
             <div className="self-center flex items-center text-lg md:text-2xl font-semibold gap-1">
               <img className="w-10" src={logo} alt="" />
-              <h2>
-                {" "}
-                ShopEase
-              </h2>
+              <h2> ShopEase</h2>
             </div>
           </div>
         </div>
@@ -115,7 +112,9 @@ const Footer = () => {
             <h3 className="tracking-wide capitalize ">Useful Links</h3>
             <ul className="space-y-5">
               <li>
+                <Link to={"/signup"}>Signup</Link>
                 <Link to={"/"}>Home</Link>
+                <Link to={"/product"}>Products</Link>
               </li>
             </ul>
           </div>
