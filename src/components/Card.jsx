@@ -4,7 +4,7 @@ import { FcRating } from "react-icons/fc";
 import { format } from "date-fns";
 
 const Card = ({ product }) => {
-  const {brandName,category,creationDate,description,price,productImage,productName,ratings
+  const {brandName,category,creationDate,description,dateAdded,price,productImage,productName,ratings
 } = product || {};
   console.log(product);
   // const checkStartDate = new Date(session?.registrationStartDate) <= new Date();
@@ -30,10 +30,15 @@ const Card = ({ product }) => {
                 <FcRating />
               </div>
             </div>
-            <p><b>Brand</b>:{brandName}</p>
+            <p>
+              <b>Brand</b>:{brandName}
+            </p>
             <p>
               <b>Creation Date</b>:
               {format(new Date(creationDate), "MMMM dd, yyyy, hh:mm:ss a")}
+            </p>
+            <p>
+              <b>Date Added</b>:{format(new Date(dateAdded), "MMMM dd, yyyy")}
             </p>
             <p title={description} className="dark:text-gray-800 text-sm">
               {description.slice(0, 150)}....
