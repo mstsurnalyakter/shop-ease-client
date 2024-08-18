@@ -1,6 +1,6 @@
 # ShopEase Frontend
 
-- **Live Site URL:** [ShopeEase]()
+- **Live Site URL:** [ShopeEase](https://shop-ease-4a820.web.app)
 
 - **Server Site Repository:** [Server](https://github.com/mstsurnalyakter/shop-ease-server)
 
