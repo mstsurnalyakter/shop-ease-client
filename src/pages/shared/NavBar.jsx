@@ -15,6 +15,7 @@ import { Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 import useAuth from "../../hooks/useAuth";
 
+
 function NavList() {
   const { user } = useAuth();
   return (
@@ -47,13 +48,20 @@ function NavList() {
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
 
-  const { user, logOut } = useAuth();
+  const { user, logOut, setUser } = useAuth();
 
-  const handleLogOut = () => {
-    logOut()
-      .then(() => {})
-      .catch((error) => toast.error(error.message));
-  };
+   const handleLogOut = () => {
+     logOut()
+       .then(() => {
+         console.log("Successfully logged out");
+         toast.success("Successfully logged out");
+          setUser(null);
+       })
+       .catch((error) => {
+         console.error("Log out error:", error.message);
+         toast.error("Failed to log out: " + error.message);
+       });
+   };
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "system");
   const element = document.documentElement;
@@ -152,12 +160,12 @@ const NavBar = () => {
                 <div className="flex items-center justify-center gap-3">
                   <button
                     onClick={() => handleLogOut()}
-                    className="bg-[#d53b4b] px-3 py-1 flex items-center justify-center  text-white  rounded-lg"
+                    className="bg-[#80f9be] px-3 py-1 flex items-center justify-center  text-white  rounded-lg"
                   >
                     Logout
                   </button>
                   <img
-                    className="rounded-full w-10 h-10 border-2 border-[#d53b4b]"
+                    className="rounded-full w-10 h-10 border-2 border-[#07BE65]"
                     src={user?.photoURL}
                     alt="profile image"
                     id="profile"
