@@ -34,6 +34,9 @@ const Card = ({ product }) => {
               <b>Brand</b>:{brandName}
             </p>
             <p>
+              <b>Category</b>:{category}
+            </p>
+            <p>
               <b>Creation Date</b>:
               {format(new Date(creationDate), "MMMM dd, yyyy, hh:mm:ss a")}
             </p>

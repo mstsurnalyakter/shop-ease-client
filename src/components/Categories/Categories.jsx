@@ -17,6 +17,17 @@ import { Link } from "react-router-dom";
 
 
 const Categories = () => {
+     const categories = [
+       "Beauty & Health",
+       "Jewelry & Watches",
+       "Electronics",
+       "Sports & Entertainment",
+       "Women's Clothing",
+       "Toys & Games",
+       "Furniture",
+       "Men's Clothing",
+     ];
+
   return (
     <div>
       <h1 className="text-center font-bold text-2xl">Shop by Categories</h1>
@@ -51,14 +62,14 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={"/products/jewelry-and-watches"}
+              to={`/categoryProducts/${categories[1]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c1} alt="" />
               <span>Jewelry & Watches</span>
             </Link>
             <Link
-              to={"/products/sports-and-entertainment"}
+              to={`/categoryProducts/${categories[3]}`}
               className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
             >
               <img src={c3} alt="" />
@@ -69,14 +80,14 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[2]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c4} alt="" />
               <span>Electronics</span>
             </Link>
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[0]}`}
               className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
             >
               <img src={c2} alt="" />
@@ -87,14 +98,14 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[4]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c5} alt="" />
               <span>Women's Clothing</span>
             </Link>
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[7]}`}
               className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
             >
               <img src={c6} alt="" />
@@ -105,14 +116,14 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[5]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c7} alt="" />
               <span> Toys & Games</span>
             </Link>
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[6]}`}
               className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
             >
               <img src={c8} alt="" />
@@ -123,32 +134,32 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
-              className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
-            >
-              <img src={c3} alt="" />
-              <span>Sports & Entertainment</span>
-            </Link>
-            <Link
-              to={""}
+              to={`/categoryProducts/${categories[1]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c1} alt="" />
               <span>Jewelry & Watches</span>
             </Link>
+            <Link
+              to={`/categoryProducts/${categories[3]}`}
+              className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
+            >
+              <img src={c3} alt="" />
+              <span>Sports & Entertainment</span>
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[2]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c4} alt="" />
               <span>Electronics</span>
             </Link>
             <Link
-              to={""}
+              to={`/categoryProducts/${categories[0]}`}
               className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
             >
               <img src={c2} alt="" />
@@ -159,36 +170,36 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
-              className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
-            >
-              <img src={c6} alt="" />
-              <span> Men's Clothing</span>
-            </Link>
-            <Link
-              to={""}
+              to={`/categoryProducts/${categories[4]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c5} alt="" />
               <span>Women's Clothing</span>
+            </Link>
+            <Link
+              to={`/categoryProducts/${categories[7]}`}
+              className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
+            >
+              <img src={c6} alt="" />
+              <span> Men's Clothing</span>
             </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
-              className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
-            >
-              <img src={c8} alt="" />
-              <span>Furniture</span>
-            </Link>
-            <Link
-              to={""}
+              to={`/categoryProducts/${categories[5]}`}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c7} alt="" />
               <span> Toys & Games</span>
+            </Link>
+            <Link
+              to={`/categoryProducts/${categories[6]}`}
+              className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
+            >
+              <img src={c8} alt="" />
+              <span>Furniture</span>
             </Link>
           </div>
         </SwiperSlide>
