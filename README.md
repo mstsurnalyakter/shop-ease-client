@@ -2,7 +2,7 @@
 
 - **Live Site URL:** [ShopeEase]()
 
-- **Server Site Repository:** [Server]()
+- **Server Site Repository:** [Server](https://github.com/mstsurnalyakter/shop-ease-server)
 
 ## Description
 ShopEase Frontend is a React application that provides a user interface for browsing and searching products on a shopping platform. It includes features such as filtering, sorting,searching, and pagination.
@@ -29,7 +29,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/mstsurnalyakter/shop-ease-client
     ```
 
 2. **Navigate to the project directory:**
