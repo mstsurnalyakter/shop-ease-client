@@ -13,7 +13,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
-import useAuth from "../hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 
 function NavList() {
   const { user } = useAuth();

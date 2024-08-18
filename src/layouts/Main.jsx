@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import NavBar from "../pages/NavBar";
+// import NavBar from "../pages/NavBar";
 import Footer from "../pages/shared/Footer";
+import NavBar from "../pages/shared/NavBar";
 const Main = () => {
   return (
     <div className="font-poppins dark:bg-blue-gray-900  duration-100">
