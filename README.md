@@ -1,5 +1,9 @@
 # ShopEase Frontend
 
+- **Live Site URL:** [ShopeEase]()
+
+- **Server Site Repository:** [Server]()
+
 ## Description
 ShopEase Frontend is a React application that provides a user interface for browsing and searching products on a shopping platform. It includes features such as filtering, sorting,searching, and pagination.
 
