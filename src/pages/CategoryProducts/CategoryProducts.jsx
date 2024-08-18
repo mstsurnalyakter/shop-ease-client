@@ -33,7 +33,7 @@ const CategoryProducts = () => {
 
   return (
     <div>
-      <h1 className="text-center font-bold text-2xl">{data[0].category}</h1>
+      <h1 className="text-center font-bold text-2xl dark:text-white">{data[0].category}</h1>
 
       <div className="grid mt-16 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {data?.length > 0 &&

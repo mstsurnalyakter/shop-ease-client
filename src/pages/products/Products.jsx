@@ -179,7 +179,7 @@ const Products = () => {
     <div>
       <header>
         <div
-          className="w-full   object-cover bg-cover h-[140px]"
+          className="w-full object-cover bg-cover h-[140px]"
           style={{
             backgroundImage: `url(${banner})`,
           }}
@@ -190,38 +190,40 @@ const Products = () => {
                 Find Product
               </h1>
 
-              <form onSubmit={handleSearch} className="relative mt-4 ">
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="Search here"
-                  className="py-3 outline-none w-2/3 pl-3 rounded"
-                  id="search"
-                  onChange={(e) => setSearchText(e.target.value)}
-                  value={searchText}
-                />
-                <button
-                  type="submit"
-                  className="!absolute bg-[#07BE65] text-white px-3 py-2 right-44 top-1 rounded"
-                >
-                  Search
-                </button>
+              <form onSubmit={handleSearch} className="mt-4 ">
+                <div className="flex items-center justify-center">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search here"
+                    className="py-3 outline-none w-2/3 pl-3 rounded"
+                    id="search"
+                    onChange={(e) => setSearchText(e.target.value)}
+                    value={searchText}
+                  />
+                  <button
+                    type="submit"
+                    className="bg-[#07BE65] text-white px-3 py-2 rounded"
+                  >
+                    Search
+                  </button>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </header>
 
-      <div className="grid grid-cols-2 gap-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 ">
         <div className="shadow mt-10 border-2 p-2">
-          <h3 className="text-center font-bold text-lg mb-2">
+          <h3 className="text-center dark:text-white font-bold text-lg mb-2">
             Filter Products
           </h3>
           <div className="border-b-2"></div>
           <div className="space-y-2 mt-2">
             <div className="flex items-center gap-1">
               <label>
-                <b>Brand Name:</b>
+                <b className="dark:text-white">Brand Name:</b>
               </label>
               <select
                 className="border-2 border-gray-700 flex-grow p-1 rounded-md"
@@ -240,7 +242,7 @@ const Products = () => {
 
             <div className="flex items-center gap-1">
               <label>
-                <b>Category Name:</b>
+                <b className="dark:text-white">Category Name:</b>
               </label>
               <select
                 className="border-2 border-gray-700 flex-grow p-1 rounded-md"
@@ -259,7 +261,7 @@ const Products = () => {
 
             <div className="flex items-center gap-1">
               <label>
-                <b>Price Range:</b>
+                <b className="dark:text-white">Price Range:</b>
               </label>
               <input
                 type="range"
@@ -271,23 +273,21 @@ const Products = () => {
                   setSelectedPriceRange([e.target.value, selectedPriceRange[1]])
                 }
               />
-              <span>
+              <span className="dark:text-white">
                 {selectedPriceRange[0]} - {selectedPriceRange[1]}
               </span>
             </div>
           </div>
-
-          {/* <button onClick={refetch}>Apply Filters</button> */}
         </div>
         <div className="shadow mt-10 border-2 p-2">
-          <h3 className="text-center font-bold text-lg mb-2">
+          <h3 className="text-center font-bold text-lg mb-2 dark:text-white">
             Sort Products
           </h3>
           <div className="border-b-2"></div>
 
           <div className="flex items-center gap-1 mt-10 ">
             <label>
-              <b>Sort By:</b>
+              <b className="dark:text-white">Sort By:</b>
             </label>
             <select
               className="border-2 border-gray-700 flex-grow p-1 rounded-md"
@@ -300,7 +300,6 @@ const Products = () => {
               <option value="date-desc">Date Added: Newest First</option>
             </select>
           </div>
-
         </div>
       </div>
 
