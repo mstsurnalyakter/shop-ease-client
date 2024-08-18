@@ -51,14 +51,14 @@ const Categories = () => {
         <SwiperSlide>
           <div className="justify-around h-full items-center flex flex-col  ">
             <Link
-              to={""}
+              to={"/products/jewelry-and-watches"}
               className="bg-white  w-28 h-28 flex justify-center items-center flex-col"
             >
               <img src={c1} alt="" />
               <span>Jewelry & Watches</span>
             </Link>
             <Link
-              to={""}
+              to={"/products/sports-and-entertainment"}
               className="bg-white flex-col  w-28 h-28 flex justify-center  gap-4 items-center"
             >
               <img src={c3} alt="" />

@@ -4,6 +4,7 @@ import Home from "../pages/home/Home";
 import Login from "../pages/Authentication/Login";
 import SingUp from "../pages/Authentication/SingUp";
 import Products from "../pages/products/Products";
+import CategoryProducts from "../pages/Jewelry&Watches/CategoryProducts";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/categoryProducts/:categoryName",
+        element:<CategoryProducts/>
       },
     ],
   },
