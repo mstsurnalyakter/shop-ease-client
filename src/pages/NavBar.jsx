@@ -29,6 +29,16 @@ function NavList() {
       >
         Home
       </NavLink>
+      <NavLink
+        to={"/products"}
+        className={({ isActive }) =>
+          isActive
+            ? "bg-[#07BE65] px-3 py-1  text-white  rounded-lg"
+            : "p-2 text-[#131313CC]"
+        }
+      >
+        Products
+      </NavLink>
 
     </List>
   );
